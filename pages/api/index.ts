@@ -144,6 +144,7 @@ export async function checkAuthRoute(
     if (error?.response?.status === 404) {
       return { code: 404, message: "You didn't set a password." }
     } else {
+      console.error(error);
       return { code: 500, message: 'Internal server error.' }
     }
   }
