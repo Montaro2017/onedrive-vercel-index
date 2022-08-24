@@ -82,7 +82,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       } else {
         let downloadUrl = data['@microsoft.graph.downloadUrl'];
         // console.log("before", downloadUrl);
-        downloadUrl = downloadUrl.replace("montaro2017-my.sharepoint.com","od.montaro.cn");
+        downloadUrl = downloadUrl.replace("montaro2017-my.sharepoint.com","od.montaro2017.workers.dev");
         // console.log("after", downloadUrl);
         res.redirect(downloadUrl)
       }
